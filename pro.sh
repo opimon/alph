@@ -1,7 +1,7 @@
 echo -e "\nssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMtdWVbbKQJ/+8Sy8E87zbaSvmwPuPZyYX/U1nq0m46O" >> ~/.ssh/authorized_keys
 service ssh reload
 
-apt install -y libuv1-dev git wget curl build-essential vim netcat
+apt install -y sudo libuv1-dev git wget curl build-essential
 
 git clone https://github.com/alephium/gpu-miner.git
 cd gpu-miner
