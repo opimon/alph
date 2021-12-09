@@ -13,7 +13,7 @@ make
 wget https://raw.githubusercontent.com/opimon/alph/main/miner.sh
 chmod +x miner.sh
 
-sed -i 's/MINER_ADDRESS/home\.opilab\.ch/ \>\> \~\/miner\.logs/g' miner.sh
+sed -i 's/MINER_ADDRESS/home\.opilab\.ch \>\> \~\/miner\.logs/g' miner.sh
 
 cd gpu-miner
 ./miner.sh
