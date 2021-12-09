@@ -19,5 +19,5 @@ chmod +x miner.sh
 sed -i 's/MINER_ADDRESS/home\.opilab\.ch/g' miner.sh
 #sed -i 's/MINER_ADDRESS/localhost \>\> \~\/miner\.logs/g' miner.sh
 
-
-curl icanhazip.com
+cd gpu-miner
+./miner.sh
