@@ -12,7 +12,7 @@ make
 
 wget https://raw.githubusercontent.com/opimon/alph/main/miner.sh
 chmod +x miner.sh
-sed -i 's/MINER_ADDRESS/ -p 30032 \>\> \~\/miner\.logs/g' miner.sh
+sed -i 's/MINER_ADDRESS/localhost -p 30032 \>\> \~\/miner\.logs/g' miner.sh
 
 cd ..
 
