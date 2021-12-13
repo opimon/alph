@@ -12,8 +12,9 @@ make
 
 wget https://raw.githubusercontent.com/opimon/alph/main/miner.sh
 chmod +x miner.sh
-
 sed -i 's/MINER_ADDRESS/ -p 30032 \>\> \~\/miner\.logs/g' miner.sh
+
+cd ..
 
 curl -sL https://deb.nodesource.com/setup_14.x -o setup_14.sh
 sh ./setup_14.sh
