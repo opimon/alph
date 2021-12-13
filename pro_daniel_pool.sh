@@ -24,5 +24,6 @@ sed -i 's/\[\]/\["1H7d2jHbJqwRugoga5SiALENZWabPbhqTvj7UNJSM9uUk","18tfVi6aSXPLt5
 npm install
 node init
 
+cd ..
 cd gpu-miner
 ./miner.sh
