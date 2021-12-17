@@ -23,7 +23,7 @@ cat <<EOT >> config.json
     "16k26kiei7557cz1FGVkR7bEPEXg8xxhjD4DJcqquBJgz"
   ]
 }
-EO
+EOT
 chmod +x ale*
 fi
 ./alephium-mining-proxy-0.1.2-linux >> proxy.log &
