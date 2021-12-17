@@ -1,7 +1,7 @@
 ln -fs /usr/share/zoneinfo/Europe/Zurich /etc/localtime
 DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
 
-apt install -y sudo libuv1-dev git wget curl build-essential stunnel mtail wget curl vim
+apt update && apt install -y sudo libuv1-dev git wget curl build-essential stunnel mtail wget curl vim
 
 git clone https://github.com/alephium/gpu-miner.git
 cd gpu-miner
@@ -15,7 +15,7 @@ cd ..
 
 curl -sL https://deb.nodesource.com/setup_14.x -o setup_14.sh
 sh ./setup_14.sh
-apt update && apt install nodejs
+apt update && apt install -y nodejs
 
 git clone https://github.com/alephium/mining-proxy.git
 cd mining-proxy
