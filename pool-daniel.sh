@@ -5,7 +5,7 @@ ln -fs /usr/share/zoneinfo/Europe/Zurich /etc/localtime
 DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
 
 apt update && apt-get -y install wget vim
-wget https://github.com/alephium/gpu-miner/releases/download/v0.5.2/alephium-0.5.0-cuda-miner-linux
+wget https://github.com/alephium/gpu-miner/releases/download/v0.5.2/alephium-0.5.2-cuda-miner-linux
 wget https://github.com/alephium/mining-proxy/releases/download/v0.1.2/alephium-mining-proxy-0.1.2-linux
 
 cat <<EOT >> config.json
