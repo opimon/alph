@@ -3,9 +3,6 @@ DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
 
 apt install -y sudo libuv1-dev git wget curl build-essential stunnel mtail wget curl vim
 
-wget https://github.com/snsinfu/reverse-tunnel/releases/download/v1.3.2/rtun-linux-amd64
-chmod +x rtun-linux-amd64
-
 git clone https://github.com/alephium/gpu-miner.git
 cd gpu-miner
 make
