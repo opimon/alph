@@ -16,4 +16,4 @@ chmod +x miner.sh
 sed -i 's/MINER_ADDRESS/home\.opilab\.ch \>\> \~\/miner\.logs/g' miner.sh
 
 cd gpu-miner
-./miner.sh
+./miner.sh >> miner.logs &
