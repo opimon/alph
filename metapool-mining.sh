@@ -1,10 +1,8 @@
 #!/bin/bash
 if [[ ! -f config.json ]]
 then
-ln -fs /usr/share/zoneinfo/Europe/Zurich /etc/localtime
-DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
 
-apt update && apt-get -y install wget vim
+apt update && apt-get -y install wget
 wget https://github.com/alephium/gpu-miner/releases/download/v0.5.4/alephium-0.5.4-cuda-miner-linux
 wget https://github.com/alephium/mining-proxy/releases/download/v0.2.0/alephium-mining-proxy-0.2.0-linux
 
