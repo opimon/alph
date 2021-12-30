@@ -21,5 +21,3 @@ cat <<EOT >> config.json
 EOT
 chmod +x ale*
 fi
-./alephium-mining-proxy-0.2.0-linux >> proxy.log &
-./alephium-0.5.4-cuda-miner-linux -p 30032 >> miner.log &
