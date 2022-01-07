@@ -2,11 +2,10 @@
 if [[ ! -f config.json ]]
 then
 
-apt update && apt-get -y install wget
-wget https://github.com/alephium/gpu-miner/releases/download/v0.5.4/alephium-0.5.4-cuda-miner-linux
-wget https://github.com/alephium/mining-proxy/releases/download/v0.2.0/alephium-mining-proxy-0.2.0-linux
+apt install vim
+curl -L https://www.metapool.tech/linux/metapool-mining.sh | bash
 
-cat <<EOT >> config.json
+cat <<EOT > config.json
 {
     "diff1TargetNumZero": 30,                       
     "jobSize": 4096,                                
@@ -21,5 +20,7 @@ cat <<EOT >> config.json
   ]
 }
 EOT
-chmod +x ale*
+
+./metapool-run.sh
 fi
+./metapool-run.sh
