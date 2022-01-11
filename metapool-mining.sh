@@ -6,9 +6,7 @@ apt install vim
 curl -L https://www.metapool.tech/linux/metapool-mining.sh | bash
 
 cat <<EOT > config.json
-{
-    "diff1TargetNumZero": 30,                       
-    "jobSize": 4096,                                
+{                           
     "serverHost": "eu.metapool.tech",               
     "serverPort": 20032,                            
     "proxyPort": 30032,                             
